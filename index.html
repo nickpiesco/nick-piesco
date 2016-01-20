@@ -1,0 +1,30 @@
+---
+layout: default
+excerpt: Personal website for the Austin, Texas-based user interface developer
+---
+
+<section class="home-content">
+
+  <p class="callout">
+    I’m a user interface developer who just loves to nerd out about design, type, branding, and Oxford commas.
+  </p>
+
+  <section class="article-list">
+
+    {% for post in site.posts %}
+      <article class="article-list-item">
+        <h1 class="article-list-item-heading">
+          <a href="{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h1>
+        <p>
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+          <a href="{{ post.url }}">&#x2192;</a>
+        </p>
+      </article>
+    {% endfor %}
+
+  </section>
+
+</section>

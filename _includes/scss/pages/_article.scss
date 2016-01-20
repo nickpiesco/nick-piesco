@@ -1,0 +1,10 @@
+// Spacing fixes for embedded content
+
+.codepen {
+  margin-bottom: $spacing-normal;
+}
+
+.speaker-deck {
+  margin: $spacing-large auto;
+  max-width: 100%;
+}

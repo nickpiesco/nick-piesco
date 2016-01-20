@@ -1,0 +1,42 @@
+.pattern-section-heading {
+  font-size: 1em;
+  background-color: $brand-color-3;
+  color: $white;
+  margin: $spacing-large 0;
+  padding: $spacing-small;
+  text-transform: uppercase;
+}
+
+// Synchronise Swatches!
+
+$color-list: (
+  'brand-color-1': $brand-color-1,
+  'brand-color-2': $brand-color-2,
+  'brand-color-3': $brand-color-3,
+  'black': $black,
+  'grey-1': $grey-1,
+  'grey-2': $grey-2,
+  'grey-3': $grey-3,
+  'grey-4': $grey-4,
+  'white': $white
+);
+
+@each $color-name, $color-value in $color-list {
+  .swatch-sample.#{$color-name} {
+    background-color: #{$color-value};
+  }
+}
+
+.swatch {
+  display: inline-block;
+  margin-right: $spacing-small;
+  width: 115px;
+  figcaption {
+    font-style: normal;
+  }
+}
+
+.swatch-sample {
+  height: 100px;
+  width: 100px;
+}

@@ -1,0 +1,88 @@
+.header-footer-container {
+  margin: 0 auto;
+  max-width: $header-footer-max-width;
+}
+
+.header {
+  border-top: 15px solid $brand-color-1;
+  padding: $spacing-large;
+  position: relative;
+  // Pseudoelements for the other border stripes
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &:before {
+    border-top: 10px solid $brand-color-2;
+    top: -10px;
+  }
+  &:after {
+    border-top: 5px solid $brand-color-3;
+    top: -5px;
+  }
+}
+
+.logotype {
+  color: $text-color;
+  line-height: 1;
+  text-decoration: none;
+  &:hover {
+    color: $text-color;
+  }
+  .logo {
+    height: 40px; // %alpha
+  }
+  .name {
+    @extend %beta;
+  }
+}
+
+.footer {
+  background-color: $grey-3;
+  margin-top: 4rem;
+  overflow: hidden; // Clearfix
+  padding: $spacing-large;
+  .header-footer-container {
+    display: flex;
+    flex-direction: column;
+    @media #{$media-footer-large} {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.social-links {
+  list-style: none;
+  margin-bottom: $spacing-normal;
+  margin-left: $spacing-small * -1;
+  @media #{$media-footer-large} {
+    margin-bottom: 0;
+  }
+}
+
+.social-link {
+  float: left;
+  margin: 0 $spacing-small;
+  .icon-group {
+    font-size: 32px;
+    text-decoration: none;
+  }
+}
+
+.colophon {
+  text-align: right;
+}
+
+.copyright {
+  display: block;
+}
+
+.nerds {
+  @extend %small;
+  font-style: italic;
+}

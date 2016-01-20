@@ -1,0 +1,9 @@
+$container-large-width: $container-max-width + 64px; // $margin-large * 2
+
+// Layout
+$media-footer-large: 'screen and (min-width: 570px)';
+
+// Content
+$media-container-large: 'screen and (min-width: #{$container-large-width})';
+$media-content-large: 'screen and (min-width: 640px)';
+$media-no-sidebar-large: 'screen and (min-width: 820px)';

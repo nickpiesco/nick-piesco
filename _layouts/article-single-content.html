@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<section class="content-section">
+
+  {% if page.sidebar %}
+    <aside class="content-sidebar">
+
+      {% for image in page.sidebar %}
+        <figure class="content-thumbnail">
+          <a href="{{ image.link }}">
+            <img src="{{ image.thumbnail }}" alt="{{ image.alt }}">
+          </a>
+
+          {% if image.caption %}
+            <figcaption>
+              {{ image.caption }}
+            </figcaption>
+          {% endif %}
+
+        </figure>
+      {% endfor %}
+
+    </aside>
+  {% endif %}
+
+  <article class="content{% unless page.sidebar %} no-sidebar{% endunless %}">
+    <h1>{{ page.title }}</h1>
+
+    <p class="callout">
+      {{ page.excerpt }}
+    </p>
+
+    {{ content }}
+  </article>
+
+</section>

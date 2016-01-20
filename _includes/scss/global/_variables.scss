@@ -1,0 +1,26 @@
+// Colours
+
+$brand-color-1: hsl(210, 100%, 25%);
+$brand-color-2: hsl(210, 100%, 42%);
+$brand-color-3: hsl(210, 100%, 59%);
+
+$black: hsl(0, 0%, 25%);
+$grey-1: hsl(0, 0%, 42%);
+$grey-2: hsl(0, 0%, 59%);
+$grey-3: hsl(0, 0%, 86%);
+$grey-4: hsl(0, 0%, 94.5%);
+$white: hsl(0, 0%, 100%);
+
+$text-color: $black;
+$sub-text-color: $grey-1;
+
+// Layout pieces
+
+$spacing-normal: 1rem;
+$spacing-small: 0.3rem;
+$spacing-large: 2rem;
+
+// It was easier to leave these in px than to do unnecessary em calculations
+$header-footer-max-width: 1200px;
+$container-max-width: 760px;
+$thumbnail-width: 220px;

@@ -1,0 +1,9 @@
+.home-content {
+  margin-top: 4rem;
+  @media #{$media-content-large} {
+    margin-top: 10rem;
+  }
+  .article-list {
+    margin-top: $spacing-large;
+  }
+}

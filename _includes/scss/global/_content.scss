@@ -1,0 +1,58 @@
+// Main content widget
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-large;
+  @media #{$media-content-large} {
+    flex-direction: row;
+  }
+}
+
+.content-sidebar {
+  flex: 1 100%;
+  text-align: center;
+  @media #{$media-content-large} {
+    flex: 1 0;
+    text-align: right;
+  }
+}
+
+.content-thumbnail {
+  margin: 0 $spacing-large $spacing-large;
+  @media #{$media-content-large} {
+    margin-left: 0;
+  }
+}
+
+.content {
+  flex: 1 100%;
+  *:last-child {
+    margin-bottom: 0;
+  }
+  @media #{$media-content-large} {
+    flex: 2 0;
+  }
+  // This smells hacky, but it’s a better solution than adding an empty sidebar
+  &.no-sidebar {
+    max-width: 100%;
+    padding: 0;
+    @media #{$media-content-large} {
+      padding-left: $thumbnail-width + 32px; // $margin-large
+    }
+    @media #{$media-no-sidebar-large} {
+      padding-left: calc(100% / 3);
+    }
+  }
+}
+
+// Article list widget
+
+.article-list-item {
+  margin-bottom: $spacing-large;
+}
+
+.article-list-item-heading {
+  @extend %beta;
+  margin-bottom: $spacing-small;
+}

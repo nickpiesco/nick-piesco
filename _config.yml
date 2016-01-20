@@ -1,0 +1,11 @@
+# Site settings
+title: Nick Piesco
+tagline: User Interface Developer
+permalink: /:title
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: assets/css
+  style: compressed
