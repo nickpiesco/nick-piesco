@@ -90,4 +90,4 @@ There’s still more performance work to be done – I’d like to experiment wi
 
 Something I really would have liked to have done, and something I’ll definitely do if (okay, *when*) I do something like this again, is [design in the open](http://bradfrost.com/blog/post/designing-in-the-open/). I had every intention of designing in the open this go-round; but in the fits and starts of getting Jekyll to work, I was like ‘oh, I’ll just go ahead and open it up when I get that sorted’, which became ‘well, let me just get this content stubbed out first’, which eventually turned into ‘okay, I’ll just do it when I’m ready to launch’.
 
-So the Git history maybe isn’t as interesting as it otherwise could be, but the code for this site is on [GitHub](). All the rest of the updates will be in the open, I promise.
+So the Git history maybe isn’t as interesting as it otherwise could be, but the code for this site is on [GitHub](https://github.com/nickpiesco/nick-piesco). All the rest of the updates will be in the open, I promise.
