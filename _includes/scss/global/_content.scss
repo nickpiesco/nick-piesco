@@ -10,7 +10,7 @@
 }
 
 .content-sidebar {
-  flex: 1 100%;
+  flex: 1 1;
   text-align: center;
   @media #{$media-content-large} {
     flex: 1 0;
@@ -26,7 +26,7 @@
 }
 
 .content {
-  flex: 1 100%;
+  flex: 1 1;
   *:last-child {
     margin-bottom: 0;
   }
