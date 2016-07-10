@@ -79,9 +79,9 @@ It was a lot harder than I thought to find a decent coherent set of SVG social m
 So using a representative page ([‘Know Your Clouds’](/know-your-clouds)) as a benchmark, the numbers don’t show *quite* as much of an improvement as I would have liked – in fact, it got heavier!
 
 **Before:** 18 requests, 155.9K<br>
-**After:** 16 requests/224.7K (149.2K fonts)
+**After:** 16 requests, 224.7K
 
-Subtract my new fonts from that, and the new version weighs in at a saner 75.5K. Either of those numbers are pretty small, though; and I think the better visual results from the custom fonts are worth the extra little bit of page weight.
+Turns out that fonts are responsible for 149.2K of that 224.7K. Since the fonts only load the first time the user hits the site (assuming they weren’t cached already), the font-free weight of 75.5K is probably closer to the average case. Both those numbers are pretty small, though; and I think the better visual results from the custom fonts are worth the initial extra little bit of page weight.
 
 Things I Could Have Done Better and/or Still Need to Do
 -------------------------------------------------------
