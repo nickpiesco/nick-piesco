@@ -9,7 +9,7 @@ excerpt: Solve new problems the old-fashioned way
 
 Thanks to the popularity of [React](https://facebook.github.io/react/), mixing markup and behaviour – once thought unfathomable – is now almost commonplace. So why not invite styling along to the party? Adding inline styles to your markup is a breeze.
 
-“Inline styling?!” I hear you say?
+‘Inline styling?!’ I hear you say?
 
 I know, I was skeptical too. But for all the progress CSS has made over the past almost 20 years, it’s still broken and annoying enough that we’ve invented whole ecosystems of tooling to... well, make it less broken and annoying.
 
