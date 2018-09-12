@@ -14,7 +14,7 @@ First, we’ll talk about why colour contrast is so important to accessibility a
 You’ll get a quick primer on blazon, the language of heraldry, the HTML and CSS of arms. Then we’ll put it all together, showing how rules that originated on the mediaeval tournament ground inform our best practices here in the 21st century.
 
 <div class="speaker-deck">
-  <script async class="speakerdeck-embed" data-id="a06acbfd8e3545daae0e9b8de086f2e2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+  <script async class="speakerdeck-embed" data-id="b07e3c45df1b4ea48dc29654ba0b24e7" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 </div>
 
 - [WCAG 2.1: Understanding Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
