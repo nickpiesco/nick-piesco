@@ -1,6 +1,9 @@
+@use "../global/variables" as *;
+@use "../global/media-queries" as *;
+
 .home-content {
   margin-top: 4rem;
-  @media #{$media-content-large} {
+  @include media-content-large {
     margin-top: 10rem;
   }
   .article-list {

@@ -1,0 +1,25 @@
+{
+  "name": "nick-piesco",
+  "version": "1.0.0",
+  "description": "Not me personally; my personal website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickpiesco/nick-piesco.git"
+  },
+  "type": "module",
+  "license": "MIT",
+  "author": "Nick Piesco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.3.0",
+    "@gotfeedback/markdown-it-media": "^1.0.1",
+    "eleventy-sass": "^3.0.0-beta.0",
+    "markdown-it-anchor": "^9.2.0",
+    "sass": "^1.97.3"
+  }
+}

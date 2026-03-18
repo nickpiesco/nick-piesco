@@ -21,6 +21,7 @@ _This is from a talk I gave at [CSS Meetup Wellington](https://www.meetup.com/We
 - [Speaking the same language](#speaking-the-same-language)
 - [The Rule of Tincture](#the-rule-of-tincture)
 - [Breaking the rules](#breaking-the-rules)
+- [Related links](#related-links)
 
 ## Why colour contrast?
 
@@ -53,7 +54,7 @@ So to comply with these guidelines, we have to hit a certain contrast ratio. How
 
 ![How to calculate contrast ratios the WCAG way](/assets/images/600_year_old_trick_03.jpg)
 
-If this is your idea of fun, feel free to [do it yourself](https://www.w3.org/WAI/WCAG21/Techniques/general/G18#tests); or you can use an online colour-testing tool. I like [the Colorable text demo](http://jxnblk.com/colorable/demos/text/); because not only is it easy to use, but it also uses [HSL](https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/), which is a little different to the other libraries that just use RGB. [Hex Naw](https://hexnaw.com/) is a wrapper around Colorable, which lets you can plug in your colours of choice and go.
+If this is your idea of fun, feel free to [do it yourself](https://www.w3.org/WAI/WCAG21/Techniques/general/G18#tests); or you can use an online colour-testing tool. I like [the Colorable text demo](http://jxnblk.com/colorable/demos/text/); because not only is it easy to use, but it also uses [HSL](https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/), which is a little different to the other libraries that just use RGB.
 
 Colour is one of those things that sounds really complicated, and then you start reading about it and learning more, and then it... gets even more complicated. If you’re interested in learning more, I recommend ‘[Colour: From Hex Codes to Eyeballs](http://jamie-wong.com/post/color/)’, an excellent deep dive into how colour goes from the screen to your brain.
 
@@ -181,7 +182,7 @@ Let’s look at some examples:
 - _Or a lion double-queued rampant Gules_ Colour on metal. This also obeys the Rule of Tincture, and it passes AA for large text.
 - _Purpure a lion double-queued rampant Sable_ – Buzz! Colour on colour – this one fails the Rule of Tincture, and the colour contrast is not accessible according to the WCAG.
 
-![Material Design colour combinations](/assets/images/color-colorsystem-schemecreation-accessibility-1a.mp4)
+![Material Design colour combinations](/assets/images/color-colorsystem-schemecreation-accessibility-1a.webm)
 
 Let’s look at a little something more Webby. In this animation, the little counter moves along the gradient from a darker colour to a lighter colour. When the counter is on the darker side, the background is clearly like a heraldic colour, so the text is white so you can read it. On the right-hand side, the background is lighter – more metal-like – and so for the text to be legible, it has to be dark – a colour.
 
@@ -192,3 +193,15 @@ The Rule of Tincture is such an important rule that arms which violate this rule
 Like all rules, the Rule of Tincture is broken sometimes, but not very often, and more often on the continent of Europe than it is in England. [Extensive studies of tens of thousands of arms from across Europe](https://www.heraldica.org/topics/tinctrul.htm) found that the rule is only violated less than two percent of the time – so for a field with origins as messy as heraldry, that’s about as hard and fast a rule as we can make.
 
 But even if we break the rules sometimes, we can always get better. When it comes to accessibility, incremental improvements are still improvements. We need to set a high standard for ourselves, and keep working toward it so we can make the Web a better place for everybody.
+
+## Related Links
+
+- [WCAG 2.1: Understanding Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
+- [Color Contrast and Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
+- [Colorable Text Demo](http://jxnblk.com/colorable/demos/text/)
+- [Color: From Hex Codes to Eyeballs](http://jamie-wong.com/post/color/)
+- [The College of Arms](https://www.college-of-arms.gov.uk/)
+- [Canadian Heraldic Authority](https://www.gg.ca/en/heraldry/canadian-heraldic-authority)
+- [Bureau of Heraldry (South Africa)](https://www.nationalarchives.gov.za/node/58)
+- [_Simple Heraldry, Cheerfully Illustrated_](https://uhuhhhhh.blogspot.com/2012/10/simple-heraldy-cheerfully-illustrated.html)
+- [The Rule of Tinctures](https://www.heraldica.org/topics/tinctrul.htm)
