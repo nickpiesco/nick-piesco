@@ -1,13 +1,10 @@
 ---
 layout: default
 ---
-
 <section class="content-section">
-
-  {% if page.sidebar %}
+  {% if sidebar %}
     <aside class="content-sidebar">
-
-      {% for image in page.sidebar %}
+      {% for image in sidebar %}
         <figure class="content-thumbnail">
           <a href="{{ image.link }}">
             <img src="{{ image.thumbnail }}" alt="{{ image.alt }}">
@@ -18,21 +15,18 @@ layout: default
               {{ image.caption }}
             </figcaption>
           {% endif %}
-
         </figure>
       {% endfor %}
-
     </aside>
   {% endif %}
 
-  <article class="content{% unless page.sidebar %} no-sidebar{% endunless %}">
-    <h1>{{ page.title }}</h1>
+  <article class="content{% unless sidebar %} no-sidebar{% endunless %}">
+    <h1>{{ title }}</h1>
 
     <p class="callout">
-      {{ page.excerpt }}
+      {{ excerpt }}
     </p>
 
     {{ content }}
   </article>
-
 </section>

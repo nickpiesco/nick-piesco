@@ -1,3 +1,5 @@
+@use "../global/variables" as *;
+
 // Spacing fixes for embedded content
 
 .codepen {
@@ -7,4 +9,8 @@
 .speaker-deck {
   margin: $spacing-large auto;
   max-width: 100%;
+}
+
+video {
+  width: 100%;
 }

@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "media-queries" as *;
+
 *,
 *:before,
 *:after {
@@ -29,7 +32,7 @@ figure {
   margin: 0 $spacing-large;
   width: calc(100% - (#{$spacing-large} * 2));
   max-width: $container-max-width;
-  @media #{$media-container-large} {
+  @include media-container-large {
     margin-left: auto;
     margin-right: auto;
   }

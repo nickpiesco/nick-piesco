@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 %body-text {
   color: $text-color;
   font-family: 'Roboto', sans-serif;
@@ -124,7 +126,7 @@ code {
 
 blockquote {
   @extend %highlight-text;
-  border-left: ($spacing-normal / 2) solid $brand-color-3;
+  border-left: calc($spacing-normal / 2) solid $brand-color-3;
   margin: $spacing-large;
   padding-left: $spacing-normal;
   cite {

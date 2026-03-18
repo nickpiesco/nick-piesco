@@ -1,17 +1,16 @@
----
----
+@use "sass:meta";
+@use "../../_includes/scss/global/variables";
 
-{% include scss/thirdparty/reset.css %}
-{% include scss/thirdparty/rouge/github.css %}
+@include meta.load-css("../../_includes/scss/thirdparty/reset.css");
 
-{% include scss/global/_variables.scss %}
-{% include scss/global/_media-queries.scss %}
-{% include scss/global/_typography.scss %}
-{% include scss/global/_layout.scss %}
-{% include scss/global/_icons.scss %}
-{% include scss/global/_header-footer.scss %}
-{% include scss/global/_content.scss %}
+@include meta.load-css("../../_includes/scss/global/media-queries");
+@include meta.load-css("../../_includes/scss/global/typography");
+@include meta.load-css("../../_includes/scss/global/layout");
+@include meta.load-css("../../_includes/scss/global/header-footer");
+@include meta.load-css("../../_includes/scss/global/content");
 
-{% include scss/pages/_home.scss %}
-{% include scss/pages/_article.scss %}
-{% include scss/pages/_pattern-library.scss %}
+@include meta.load-css("../../_includes/scss/pages/home");
+@include meta.load-css("../../_includes/scss/pages/article");
+@include meta.load-css("../../_includes/scss/pages/pattern-library");
+
+@include meta.load-css("../../_includes/scss/thirdparty/prism-ghcolors.css");

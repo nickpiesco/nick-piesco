@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {% if page.url == '/' %}
+        {{ site.title }} &middot; {{ site.description }}
+      {% else %}
+        {{ title }} &middot; {{ site.title }}
+      {% endif %}
+    </title>
+    <meta name="description" content="{{ page.excerpt }}">
+    <meta name="generator" content="{{ eleventy.generator }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Inconsolata:400,700">
+    <link rel="stylesheet" href="/assets/css/main.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-footer-container">
+        <a class="logotype" href="/">
+          <img class="logo" src="/assets/siteimages/logo-colour.svg" alt="Nick Piesco">
+          <span class="name">Nick Piesco<span>
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    {% render 'footer' %}
+  </body>
+
+</html>
