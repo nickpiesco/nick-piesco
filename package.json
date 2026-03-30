@@ -11,7 +11,8 @@
   "author": "Nick Piesco",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx --node-options=\"--experimental-require-module\" @11ty/eleventy",
+    "serve": "npx --node-options=\"--experimental-require-module\" @11ty/eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
