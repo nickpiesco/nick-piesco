@@ -21,15 +21,15 @@ The Georgian government does not appear to provide publicly-available GIS data. 
 
 [Open Maps for Europe](https://www.mapsforeurope.org/access-data) and [OpenStreetMap](https://www.openstreetmap.org/) provided line and polygon data for natural and political features and land use. I thought it would be interesting to start with data for mines (point data provided) and quarries and industrial areas (polygon data provided).
 
-![Topographic map with industrial areas highlighted](/assets/images/surface_mining_1.jpg)
+[![Topographic map with industrial areas highlighted](/assets/images/surface_mining_1.jpg)](/assets/images/surface_mining_1.jpg)
 
 I corroborated the data for the survey area with information from the United States Geological Survey [Mineral Resource Data System](https://mrdata.usgs.gov/mrds/show-mrds.php?dep_id=10255409), but the data only slightly correlates with the satellite-viewable mining areas.
 
-![Same view, but with a satellite base map showing non-vegetated areas](/assets/images/surface_mining_2.jpg)
+[![Same view, but with a satellite base map showing non-vegetated areas](/assets/images/surface_mining_2.jpg)](/assets/images/surface_mining_2.jpg)
 
 Using the [Copernicus Browser](https://browser.dataspace.copernicus.eu/), I looked through Sentinel 2 mosaic data to see if any of their products provided a good contrast between the mined area and the undisturbed area. The false colour imagery provided a delineation clear enough that I could use automated tools in ArcGIS Pro to find the mined areas and calculate the area.
 
-![Same view, but with a false-colour satellite base map](/assets/images/surface_mining_3.jpg)
+[![Same view, but with a false-colour satellite base map](/assets/images/surface_mining_3.jpg)](/assets/images/surface_mining_3.jpg)
 
 ## Geospatial processing
 
@@ -39,7 +39,7 @@ I used the Image Classification tool to break down the false-colour data. Becaus
 
 This provided raster imagery for the three views in the time series. I then used the Raster to Polygon tool to create vector data. Visually inspecting the polygon data against the raster data showed generally good results, but the classified data did show a lot of ‘noise’. I filtered out the smallest polygons by `Shape_Area`, leaving polygons fairly congruent with the satellite data behind.
 
-![Map showing non-vegetated areas over time](/assets/images/surface_mining_4.jpg)
+[![Map showing non-vegetated areas over time](/assets/images/surface_mining_4.jpg)](/assets/images/surface_mining_4.jpg)
 
 I wanted to measure the area of the polygons, but I didn’t know what units were being used. I went into the attribute table, created the field `area_km2`, and used the Calculate Geometry Attributes tool to populate that new field with the area of the polygons in square kilometres. Using the Summarise tool, I found the total area of all the polygons in the layer.
 
