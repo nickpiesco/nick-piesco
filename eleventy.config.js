@@ -1,4 +1,5 @@
 import eleventySass from "eleventy-sass";
+import embedYouTube from "eleventy-plugin-youtube-embed";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItMedia from "@gotfeedback/markdown-it-media";
@@ -15,6 +16,11 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  eleventyConfig.addPlugin(embedYouTube, {
+    embedClass: "youtube",
+    lite: true,
+  });
 
   eleventyConfig.addTemplateFormats("scss");
 
@@ -47,7 +53,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.setLibrary(
     "md",
-    markdownIt({ html: true })
+    markdownIt({ html: true, linkify: true })
       .use(markdownItAnchor, markdownItAnchorOptions)
       .use(markdownItMedia, markdownItMediaOptions),
   );
