@@ -16,4 +16,6 @@ It was pretty much a lift-and-shift operation. Migrating my templates to Liquid 
 - [`eleventy-sass`](https://github.com/kentaroi/eleventy-sass): Using the beta here, so I need to send the `--experimental-require-module` flag. Nothing an npm script can’t fix.
 - [`markdown-it-anchor`](https://github.com/valeriangalliat/markdown-it-anchor)
 
-There were a couple little knobs I had to twiddle to maintain post collation behaviour and file structure; but all in all, it went pretty smoothly. Have a squiz at the source on GitHub if you want the full look behind the curtain.
+There were a couple little knobs I had to twiddle to maintain post collation behaviour and file structure; but all in all, it went pretty smoothly.
+
+Also, importantly, I removed Google Analytics. Why? I didn’t use it, you don’t want it, and so out it went. Have a squiz at the source on GitHub if you want the full look behind the curtain.
